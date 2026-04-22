@@ -660,7 +660,14 @@ button {
   position: relative;
   overflow: hidden;
 }
-.founder-img::after {
+.founder-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+/* Placeholder (only shown when .founder-img is empty, i.e. no <img> inside). */
+.founder-img:empty::after {
   content: "STUDIO PORTRAIT — DAYNE S.";
   position: absolute;
   inset: 0;
@@ -672,7 +679,7 @@ button {
   letter-spacing: .15em;
   color: var(--text-mute);
 }
-.founder-img::before {
+.founder-img:empty::before {
   content: "";
   position: absolute;
   inset: 0;

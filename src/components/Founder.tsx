@@ -1,3 +1,4 @@
+import Image from "next/image";
 import ArrowIcon from "./ArrowIcon";
 
 export default function Founder() {
@@ -5,7 +6,14 @@ export default function Founder() {
     <section className="section" id="founder" style={{ paddingTop: 40 }}>
       <div className="container-pf">
         <div className="founder">
-          <div className="founder-img reveal" />
+          <div className="founder-img reveal">
+            <Image
+              src="/dayne-portrait.avif"
+              alt="Studio portrait of Dayne S., founder of Producer Flow Academy"
+              fill
+              sizes="(max-width: 900px) 100vw, 50vw"
+            />
+          </div>
           <div className="founder-text reveal">
             <div className="mono" style={{ marginBottom: 20 }}>
               // Founder &mdash; Dayne S.
