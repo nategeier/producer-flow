@@ -20,9 +20,6 @@ export default function Footer() {
                 <a href="#programmes">Coaching 1-on-1</a>
               </li>
               <li>
-                <a href="#programmes">Essentials</a>
-              </li>
-              <li>
                 <a href="#programmes">Intro</a>
               </li>
             </ul>
